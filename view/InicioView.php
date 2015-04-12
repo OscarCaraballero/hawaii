@@ -1,4 +1,4 @@
-<!-- PARTE JAVI Y CORI
+ PARTE JAVI Y CORI
 
 <form method="post" action="Login">
      <div>
@@ -10,7 +10,7 @@
       <br>
         <button type="submit">Iniciar sesión</button>
 </form>
--->
+
 
 <div class="grid-65" id="newsBlock">
     <h3>Noticias más recientes</h3><hr/>
