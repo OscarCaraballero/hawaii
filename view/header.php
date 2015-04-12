@@ -32,7 +32,7 @@
                             <li><a href="Apartamentos">Apartamentos</a></li>
                             <li><a href="Reservar">Reservar</a></li>
                             <li><a href="Contacto">Contacto</a></li>
-                            <li><a href="Contacto">Comentarios</a></li>
+                            <li><a href="Comentarios">Comentarios</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <?php if (!array_key_exists("user", $_SESSION)) : ?>
