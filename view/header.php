@@ -57,8 +57,8 @@
                                                         </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                                     <button type="submit" class="btn btn-default">Login</button>
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                                                 </div>
                                             </form>
                                         </div><!-- /.modal-content -->
@@ -81,3 +81,10 @@
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
+            <?php if (array_key_exists("msg", $_SESSION)) : ?>
+            <div class="alert alert-danger" role="alert">
+                <?= $_SESSION['msg'] ?>
+                <?php unset($_SESSION['msg']) ?>
+            </div>
+            <?php endif; ?>
+

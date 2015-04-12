@@ -5,7 +5,6 @@ require_once 'model/LoginModel.php';
 class LoginController extends Controller {
     
     function process() {
-        
         $email=$_POST['email'];
         $contrasena=$_POST['contrasena'];
         $contrasena = sha1($contrasena);
@@ -14,6 +13,7 @@ class LoginController extends Controller {
         $registro=$comprobarModel->comprobar($email, $contrasena);
         //Si no se encuentra en la base de datos regresamos al inicio
         if(empty($registro[0])){
+            $_SESSION['msg'] = "Nombre de usuario o contraseña erroneos";
             header("Location:Inicio");
         }
         else {   
