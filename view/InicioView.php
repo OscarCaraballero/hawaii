@@ -1,4 +1,10 @@
  PARTE JAVI Y CORI
+ 
+ <?php 
+ 
+ var_dump($_SESSION);
+ 
+ ?>
 
 <form method="post" action="Login">
      <div>

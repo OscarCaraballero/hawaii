@@ -2,6 +2,19 @@
     <head>
     </head>
     <body>
+        <script>
+            setInterval(function () {
+                check()
+            }, 30000);
+            function check() {
+                $.post("control/ajax/CheckSession.php", function (data) {
+                    if (data === '0') {
+                        alert('Su sesión ha expirado.');
+                        location.href = 'Logout';
+                    }
+                });
+            }
+        </script>
         <div class="grid-container">
             <ul>
                 <a href="">  
