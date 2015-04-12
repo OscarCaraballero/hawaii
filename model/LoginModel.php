@@ -10,10 +10,10 @@ class LoginModel {
         $return = $bbdd->select("usuarios",[
             "nombre",
             "rol",
-            "nombre_usuario"
+            "email"
         ],[
             "AND" => [
-                "nombre_usuario" => $email,
+                "email" => $email,
                 "contrasena" => $contrasena 
             ]
         ]);

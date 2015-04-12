@@ -3,8 +3,6 @@
 ini_set('session.gc_maxlifetime', 7200);
 session_set_cookie_params('7200');
 session_start();
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 class FrontController {
 
