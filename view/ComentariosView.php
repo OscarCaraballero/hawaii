@@ -1,3 +1,4 @@
+<?php if (array_key_exists("user", $_SESSION)) : ?>
 <div class="col-md-3">
     <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
         <a href="#comentario" class="btn btn-default" data-toggle="modal">Agregar Comentario</a>
@@ -25,6 +26,7 @@
         </div><!-- /.modal-dialog -->
     </div>
 </div>
+<?php endif; ?>
 <div class="col-md-9">
     <div class="panel panel-default">
         <div class="panel-heading">
