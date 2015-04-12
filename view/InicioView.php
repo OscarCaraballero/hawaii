@@ -1,21 +1,9 @@
- PARTE JAVI Y CORI
- 
+
  <?php 
  
- var_dump($_SESSION);
+ //var_dump($_SESSION);
  
  ?>
-
-<form method="post" action="Login">
-     <div>
-        <label for="email">Email:</label>
-        <input type="text" name="email" cols="5" id="email" placeholder="Email..."> 
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" name="contrasena" id="contrasena">
-      </div>
-      <br>
-        <button type="submit">Iniciar sesión</button>
-</form>
 
 
 <div class="grid-65" id="newsBlock">

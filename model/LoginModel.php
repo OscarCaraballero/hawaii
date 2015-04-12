@@ -9,7 +9,8 @@ class LoginModel {
         $bbdd = new medoo();
         $return = $bbdd->select("usuarios",[
             "nombre",
-            "rol"
+            "rol",
+            "nombre_usuario"
         ],[
             "AND" => [
                 "nombre_usuario" => $email,

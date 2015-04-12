@@ -20,7 +20,8 @@ class LoginController extends Controller {
         else {   
             /// Si llegamos hasta este punto es que si que existe el usuario por lo que procedemos a 
             // guardar los datos de sesion a falta de saber el tipo de usuario que es.
-            $_SESSION["nombre"]=$registro[0]['nombre'];
+            $_SESSION["nombre"]= $registro[0]['nombre'];
+            $_SESSION['user'] = $registro[0]['nombre_usuario'];
             $_SESSION["rol"]=$registro[0]['rol'];
             mysql_close();
      
