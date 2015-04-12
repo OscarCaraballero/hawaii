@@ -19,7 +19,7 @@ class FrontController {
         if (!empty($uri)){
             $controllerName = $uri . 'Controller';
         }else
-            $controllerName = "InitController";
+            $controllerName = "InicioController";
         
         
         /* if (!empty($_GET['command']))

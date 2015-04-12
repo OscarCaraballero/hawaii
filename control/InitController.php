@@ -6,6 +6,6 @@ require_once 'Controller.php';
 class InitController extends Controller {
 
     function process() {
-        require_once 'view/Inicio.php';
+        header("Location: Inicio");
     }
 }

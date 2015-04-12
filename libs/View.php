@@ -22,7 +22,7 @@ class View {
         else
             $this->_controlador = "Inicio";
         
-        $this->title = "Dawgram";
+        $this->title = "";
         $this->header = "view/". "header.php";
         $this->footer = "view/". "footer.php";
         
@@ -34,7 +34,6 @@ class View {
     }
     
     public function render($data = array()){ 
-        echo '<html manifest="manifest.appcache">';
         echo self::setParamsCss();
         echo self::setParamsScripts();
         echo self::setParamsImages();
@@ -69,10 +68,11 @@ class View {
     // y, por lo tanto, $paramas es un array.
     // Si indicas, por ejemplo, la opcion "ruta_css", la variable $paramas setá 
     // una string con la ruta de ese único campo.
-    public function setParamsScripts(){
+    public function setParamsScripts() {
         $scripts = "";
-        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'jquery-1.11.1.min.js"></script>';
-        $scripts.= '<script src="'. $this->layoutParams['ruta_js'] .'jquery.mobile-1.4.5.min.js"></script>';
+        $scripts.= '<script src="' . $this->layoutParams['ruta_js'] . 'jquery-1.11.2.js"></script>';
+        $scripts.= '<script src="' . $this->layoutParams['ruta_js'] . 'bootstrap.js"></script>';
+        //$scripts.= '<script src="'. $this->layoutParams['ruta_js'] . $this->_controlador.'.js"></script>';
         return $scripts;
     }
     
@@ -85,13 +85,11 @@ class View {
     
     public function setParamsCss(){
         $css = "";
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'dawgram.min.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery.mobile.icons.min.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'jquery.mobile.structure-1.4.5.min.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'PerfilStyle.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic.css">';
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic-grid-mobile.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic-grid-desktop.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'mainHawaii.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic-grid-base.css">';        
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic-grid-base.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'bootstrap.css">';           
 //        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'reset.css">';
 //        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style.css">';
         return $css;

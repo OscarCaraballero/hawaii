@@ -1,2 +1,2 @@
 <?php
-echo "Soy el Inicio";
+echo "Soy el Inicio <br>";
