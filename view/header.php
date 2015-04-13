@@ -70,7 +70,7 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administrar <span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="#">Noticias</a></li>
-                                        <li><a href="#">Comentarios</a></li>
+                                        <li><a href="Comentarios">Comentarios</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="Logout">Salir</a></li>
