@@ -73,6 +73,9 @@ class View {
         $scripts.= '<script src="' . $this->layoutParams['ruta_js'] . 'jquery-1.11.2.js"></script>';
         $scripts.= '<script src="' . $this->layoutParams['ruta_js'] . 'bootstrap.js"></script>';
         $scripts.= '<script src="' . $this->layoutParams['ruta_js'] . 'pgwslider.min.js"></script>';
+        $scripts.= '<script src="' . $this->layoutParams['ruta_js'] . 'bootstrap-datepicker.min.js"></script>';
+        $scripts.= '<script src="' . $this->layoutParams['ruta_js'] . 'bootstrap-datepicker.es.min.js"></script>';
+        $scripts.= '<script src="' . $this->layoutParams['ruta_js'] . 'bootstrap-select.min.js"></script>';
         //$scripts.= '<script src="'. $this->layoutParams['ruta_js'] . $this->_controlador.'.js"></script>';
         return $scripts;
     }
@@ -91,6 +94,8 @@ class View {
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic-grid-base.css">';        
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'bootstrap.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'pgwslider.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'bootstrap-datepicker3.min.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'bootstrap-select.min.css">';
 //        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'reset.css">';
 //        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'style.css">';
         return $css;
