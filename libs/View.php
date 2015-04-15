@@ -92,7 +92,7 @@ class View {
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic-grid-desktop.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'mainHawaii.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'unsemantic-grid-base.css">';        
-        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'bootstrap.css">';
+        $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'bootstrap.min.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'pgwslider.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'bootstrap-datepicker3.min.css">';
         $css .= '<link rel="stylesheet" type="text/css" href="'. $this->layoutParams['ruta_css'] .'bootstrap-select.min.css">';

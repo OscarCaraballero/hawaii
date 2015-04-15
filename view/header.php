@@ -15,7 +15,7 @@
                 });
             }
         </script>-->
-        <div class="grid-container">
+        <div class="container">
             <div>
                 <a href=""><img src="view/images/logo-hawaii.png" style="width:200px;height:60px"></a>
             </div>

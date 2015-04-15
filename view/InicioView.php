@@ -16,31 +16,34 @@
     });
 
 </script>
-<div class="grid-65">
+<div class="col-md-4 formularioReserva">
     <form>
         <div class="panel panel-default">
             <div class="panel-body">
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">Entrada</span>
-                    <div id="calendario" class="input-daterange input-group" id="datepicker">
-                        <input type="text" class="input-sm form-control" name="start" />
-
-                        <span class="input-group-addon">Salida</span>
-
-                        <input type="text" class="input-sm form-control" name="end" />
-                    </div>
-                    <script>
-                        $('#calendario').datepicker({
-                            format: "dd/mm/yy",
-                            todayBtn: "linked",
-                            language: "es",
-                            autoclose: true
-                        });
-                    </script>
+                <div class="input-group col-md-12">
+                    <span class="input-group-addon etiqueta" id="basic-addon1">Entrada</span>
+                    <div id="calendario" class="input-group date calendar">
+                        <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                    </div>               
                 </div>
                 <br><br>
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">Adultos</span>
+                <div class="input-group col-md-12">
+                    <span class="input-group-addon etiqueta" id="basic-addon1">Salida</span>
+                    <div id="calendario" class="input-group date calendar">
+                        <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                    </div>
+                </div>
+                <script>
+                    $('.calendar').datepicker({
+                        format: "dd/mm/yyyy",
+                        todayBtn: "linked",
+                        language: "es"
+                    });
+                </script>
+                <br><br>
+
+                <div class="input-group col-md-6">
+                    <span class="input-group-addon etiqueta" id="basic-addon1">Adultos</span>
                     <select class="selectpicker">
                         <option>1</option>
                         <option>2</option>
@@ -48,7 +51,10 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <span class="input-group-addon" id="basic-addon1">Niños</span>
+                </div>
+                <br><br>
+                <div class="input-group col-md-6">
+                    <span class="input-group-addon etiqueta" id="basic-addon1">Niños</span>
                     <select class="selectpicker">
                         <option>1</option>
                         <option>2</option>
@@ -73,32 +79,44 @@
 
 
 
-<div class="grid-65" id="newsBlock">
+<div class="col-md-8" id="newsBlock">
     <h3>Noticias más recientes</h3><hr/>
-    <div class="contentNew">
-        <img class="newImg" src="view/images/news/new0.jpg">
-        <h3>Titulo Noticia 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+    <div class="col-md-12 noticia">
+        <div class="contentNew col-md-5">
+            <img class="newImg" src="view/images/news/new0.jpg">
+        </div>
+        <div class="col-md-7">
+            <h4 class="tituloNoticia">Titulo Noticia 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
+                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>  
+        </div>
     </div>
-    <div class="contentNew">
-        <img class="newImg" src="view/images/news/new0.jpg">
-        <h3>Titulo Noticia 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+    <div class="col-md-12 noticia">
+        <div class="contentNew col-md-5">
+            <img class="newImg" src="view/images/news/new0.jpg">
+        </div>
+        <div class="col-md-7">
+            <h4 class="tituloNoticia">Titulo Noticia 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
+                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>  
+        </div>
     </div>
-    <div class="contentNew">
-        <img class="newImg" src="view/images/news/new0.jpg">
-        <h3>Titulo Noticia 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-    </div>    
+    <div class="col-md-12 noticia">
+        <div class="contentNew col-md-5">
+            <img class="newImg" src="view/images/news/new0.jpg">
+        </div>
+        <div class="col-md-7">
+            <h4 class="tituloNoticia">Titulo Noticia 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
+                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>  
+        </div>
+    </div>
 </div>
 
-<div class="grid-35 promoContainer">
+<div class="col-md-12 promoContainer">
     <img id="promo" src="view/images/promo01.jpg">
     <img id="promo" src="view/images/promo01.jpg">
     <img id="promo" src="view/images/promo01.jpg">
