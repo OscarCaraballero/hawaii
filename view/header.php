@@ -65,7 +65,7 @@
                                     </div><!-- /.modal-dialog -->
                                 </div>
                             <?php endif; ?>
-                            <?php if (array_key_exists("user", $_SESSION) && $_SESSION['rol'] === 'admin') : ?>
+                            <?php if (array_key_exists("user", $_SESSION) && $_SESSION['rol'] === '1') : ?>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administrar <span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
