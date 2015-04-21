@@ -17,26 +17,27 @@
 
 </script>
 <div class="col-md-4 formularioReserva">
-    <form>
+    <form action="Disponibilidad" method="post">
         <div class="panel panel-default">
             <div class="panel-body">
                 <div class="input-group col-md-12">
                     <span class="input-group-addon etiqueta" id="basic-addon1">Entrada</span>
                     <div id="calendario" class="input-group date calendar">
-                        <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                        <input type="text" name="entrada" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                     </div>               
                 </div>
                 <br><br>
                 <div class="input-group col-md-12">
                     <span class="input-group-addon etiqueta" id="basic-addon1">Salida</span>
                     <div id="calendario" class="input-group date calendar">
-                        <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                        <input type="text" name="salida" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                     </div>
                 </div>
                 <script>
                     $('.calendar').datepicker({
                         format: "dd/mm/yyyy",
                         todayBtn: "linked",
+                        autoclose: "true",
                         language: "es"
                     });
                 </script>
@@ -44,7 +45,7 @@
 
                 <div class="input-group col-md-6">
                     <span class="input-group-addon etiqueta" id="basic-addon1">Adultos</span>
-                    <select class="selectpicker">
+                    <select name="adultos" class="selectpicker">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -55,7 +56,8 @@
                 <br><br>
                 <div class="input-group col-md-6">
                     <span class="input-group-addon etiqueta" id="basic-addon1">Niños</span>
-                    <select class="selectpicker">
+                    <select name="ninos" class="selectpicker">
+                        <option>0</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
