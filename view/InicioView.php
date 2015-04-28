@@ -23,14 +23,14 @@
                 <div class="input-group col-md-12">
                     <span class="input-group-addon etiqueta" id="basic-addon1">Entrada</span>
                     <div id="calendario" class="input-group date calendar">
-                        <input type="text" name="entrada" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                        <input type="text" name="entrada" class="form-control" required><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                     </div>               
                 </div>
                 <br><br>
                 <div class="input-group col-md-12">
                     <span class="input-group-addon etiqueta" id="basic-addon1">Salida</span>
                     <div id="calendario" class="input-group date calendar">
-                        <input type="text" name="salida" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                        <input type="text" name="salida" class="form-control" required><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                     </div>
                 </div>
                 <script>

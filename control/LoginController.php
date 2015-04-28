@@ -9,8 +9,6 @@ class LoginController extends Controller {
         $contrasena=$_POST['contrasena'];
         $contrasena = md5($contrasena);
         
-
- 
         $comprobarModel= new LoginModel();
         $registro=$comprobarModel->comprobar($email, $contrasena);
         //Si no se encuentra en la base de datos regresamos al inicio
