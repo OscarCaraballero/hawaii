@@ -12,6 +12,7 @@ class LoginController extends Controller {
         $comprobarModel= new LoginModel();
         $registro=$comprobarModel->comprobar($email, $contrasena);
         //Si no se encuentra en la base de datos regresamos al inicio
+        
 
         if(empty($registro[0])){
             $_SESSION['msg'] = "Nombre de usuario o contraseña erroneos";
@@ -23,7 +24,7 @@ class LoginController extends Controller {
             $_SESSION["nombre"]= $registro[0]['nombre'];
             $_SESSION['user'] = $registro[0]['email'];
             $_SESSION["rol"]=$registro[0]['rol'];
-            mysql_close();
+            $_SESSION["datosContacto"]=$registro[0]['datosContacto'];
      
             header("Location:Inicio");                  
         }

@@ -7,17 +7,17 @@ class LoginModel {
     
     public function comprobar ($email, $contrasena) {
         $bbdd = new medoo();
-        $return = $bbdd->select("usuarios",[
+        return $bbdd->select("usuarios",[
             "rol",
-            "email"
+            "email",
+            "datosContacto"
         ],[
             "AND" => [
                 "email" => $email,
                 "password" => $contrasena 
             ]
         ]);
-        
-        return $return;
+
         
 //        $base="mda";
 //        $tabla="usuarios";
