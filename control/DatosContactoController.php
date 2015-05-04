@@ -13,10 +13,12 @@ class DatosContactoController extends Controller{
     function process() {
         if (array_key_exists("user", $_SESSION))
         {
+            $datos = Array();
             $DCM = new DatosContactoModel();
-            $datos = $DCM->getDatosContacto($_SESSION['datosContacto']);
+            $datosCont = $DCM->getDatosContacto($_SESSION['datosContacto']);
             
             array_push($datos, $_POST);
+            array_push($datos, $datosCont);
             array_push($datos, $_SESSION);
             $this->_view->render($datos);
         }else

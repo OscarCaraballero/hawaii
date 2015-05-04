@@ -17,7 +17,7 @@
         </script>-->
         <div class="container">
             <div>
-                <a href=""><img src="view/images/logo-hawaii.png" style="width:200px;height:60px"></a>
+                <a href=""><img src="view/images/logo.png"></a>
             </div>
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
